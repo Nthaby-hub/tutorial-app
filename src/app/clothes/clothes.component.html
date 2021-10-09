@@ -1,0 +1,12 @@
+
+<h3>Lessons</h3>
+<div *ngFor="let cloth of clothes">
+    <label>document id: {{cloth.id}}</label>
+    <label>Name: &nbsp; {{cloth.name}}</label> &nbsp;
+    <label>Lesson: &nbsp; {{cloth.lesson}}</label>&nbsp;
+    
+    <br><br>
+</div>
+<button (click)="create()">Go to Create</button>
+
+  

@@ -1,0 +1,18 @@
+
+<form [formGroup]="this.form">
+
+    <div>
+        <label>Name</label> &nbsp;
+        <input type="text" formControlName="name">
+    </div>
+    <br>
+    <div>
+        <label>Lesson</label> &nbsp;
+        <input type="text" formControlName="lesson">
+    </div>
+    <br>
+    <div>
+        <button type="submit" (click)="submitClothesData()">Add Lesson</button>
+    </div>
+
+</form>

@@ -1,0 +1,24 @@
+
+<div>
+    <button (click)="goBack()">Go Back</button>
+ </div>
+
+ <form [formGroup]="editForm" (ngSubmit)="updateForm()">
+
+    <div>
+        <label>Name</label> &nbsp;
+        <input type="text" formControlName="name">
+    </div>
+    <br>
+    <div>
+        <label>Lesson</label> &nbsp;
+        <input type="text" formControlName="lesson">
+    </div>
+    <br>
+    <div class="form-group text-right">
+        <button type="submit" (click)="updateForm()">
+            Update Student
+        </button>
+     </div>
+
+ </form>
